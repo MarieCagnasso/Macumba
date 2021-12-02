@@ -1,35 +1,20 @@
-class Rescue{
-    constructor(date, description, individualRescue) {
-        this.date = date;
-        this.description = description;
-        this.individualRescue = individualRescue;
-    }
-    date;
-    description;
-    individualRescue;
+const sql = require("./db.js");
 
+const Rescue = function(rescue){
+        this.date = rescue.date;
+        this.description = rescue.description;
+        this.individualRescue = rescue.individualRescue;
+    };
 
-    get date() {
-        return this.date;
-    }
+Rescue.create = (newRescue, result) => {
+    sql.query("INSERT INTO rescues SET ?", newTutorial, (err, res) => {
+        if (err) {
+            console.log("error: ", err);
+            result(err, null);
+            return;
+        }
 
-    set date(value) {
-        this.date = value;
-    }
-
-    get description() {
-        return this.description;
-    }
-
-    set description(value) {
-        this.description = value;
-    }
-
-    get individualRescue() {
-        return this.individualRescue;
-    }
-
-    set individualRescue(value) {
-        this.individualRescue = value;
-    }
-}
+        console.log("created rescue: ", { id: res.insertId, ...newRescue });
+        result(null, { id: res.insertId, ...newRescue });
+    });
+};
