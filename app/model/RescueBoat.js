@@ -1,11 +1,11 @@
 class RescueBoat extends Boat{
     constructor(affectation, manufacturer, lauchingDate, test, endOfService,) {
         super();
-        this._affectation = affectation;
-        this._manufacturer = manufacturer;
-        this._lauchingDate = lauchingDate;
-        this._test = test;
-        this._endOfService = endOfService;
+        this.affectation = affectation;
+        this.manufacturer = manufacturer;
+        this.lauchingDate = lauchingDate;
+        this.test = test;
+        this.endOfService = endOfService;
     }
     affectation;
     manufacturer;
