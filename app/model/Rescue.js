@@ -4,6 +4,9 @@ class Rescue{
         this.description = description;
         this.individualRescue = individualRescue;
     }
+    date;
+    description;
+    individualRescue;
 
 
     get date() {
