@@ -1,14 +1,14 @@
 class Testimony{
     constructor(testimony) {
-        this._testimony = testimony;
+        this.testimony = testimony;
     }
 
     get testimony() {
-        return this._testimony;
+        return this.testimony;
     }
 
     set testimony(value) {
-        this._testimony = value;
+        this.testimony = value;
     }
 }
 
