@@ -5,6 +5,10 @@ class Dimension{
         this.weight = weight;
         this.draught = draught;
     }
+    length;
+    width;
+    weight;
+    draught;
 
     get length() {
         return this.length;

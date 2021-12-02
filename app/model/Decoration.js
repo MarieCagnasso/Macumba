@@ -3,6 +3,8 @@ class Decoration{
         this.date = date;
         this.title = title;
     }
+    date;
+    title;
 
     get date() {
         return this.date;

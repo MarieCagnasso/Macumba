@@ -3,6 +3,8 @@ class Image{
         this.legend = legend;
         this.url = url;
     }
+    legend;
+    url;
 
     get url() {
         return this.url;
