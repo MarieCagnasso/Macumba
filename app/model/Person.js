@@ -15,6 +15,7 @@ class Person {
     birthDate;
     deathDate;
     birthPlace;
+    deathPlace;
 
     get firstName() {
         return this.firstName;
@@ -72,6 +73,6 @@ class Person {
         this._deathPlace = value;
     }
 
-    deathPlace;
+
 
 }

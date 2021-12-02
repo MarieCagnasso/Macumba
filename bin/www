@@ -91,14 +91,12 @@ function onListening() {
 
 
 const mysql = require('mysql');
+
 const db = mysql.createConnection({
-
   host: "localhost",
-
-  user: "nom_utilisateur",
-
-  password: "mot_de_passe_utilisateur"
-
+  user: "root",
+  password: "root",
+  port: 3000
 });
 
 db.connect(function(err) {
