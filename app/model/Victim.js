@@ -1,10 +1,9 @@
 class Victim extends Person{
     constructor(isChild, isTeen, isAlive) {
         super();
-        this.isChil = isChild;
-        this._isChild = isChild;
-        this._isTeen = isTeen;
-        this._isAlive = isAlive;
+        this.isChild = isChild;
+        this.isTeen = isTeen;
+        this.isAlive = isAlive;
     }
     isChild;
     isTeen;
